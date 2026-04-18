@@ -1,12 +1,12 @@
 // utils/config-negocio.js - VERSIÓN MULTI-TENANT CORREGIDA
-// CLIENTE: Diva Habana Nails
+// CLIENTE: Nails Salon Ebenezer 
 
 console.log('🏢 config-negocio.js cargado');
 
 // ============================================
 // 🔥 CONFIGURACIÓN POR CLIENTE - ¡LO ÚNICO QUE CAMBIA!
 // ============================================
-const NEGOCIO_ID_POR_DEFECTO = 'b844f563-d3fb-4eed-8996-d77a936c3f70'; // ID de Diva Habana Nails
+const NEGOCIO_ID_POR_DEFECTO = 'ef954d16-f163-4f9e-b703-219f6f016bc9'; // ID de Nails Salon Ebenezer 
 
 // Hacer accesible globalmente
 window.NEGOCIO_ID_POR_DEFECTO = NEGOCIO_ID_POR_DEFECTO;
@@ -116,7 +116,7 @@ window.cargarConfiguracionNegocio = async function(forceRefresh = false) {
  */
 window.getNombreNegocio = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.nombre || 'Diva Habana Nails';
+    return config?.nombre || 'Nails Salon Ebenezer ';
 };
 
 /**
@@ -124,7 +124,7 @@ window.getNombreNegocio = async function() {
  */
 window.getTelefonoDuenno = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.telefono || '59494625';
+    return config?.telefono || '56104138 ';
 };
 
 /**
@@ -132,7 +132,7 @@ window.getTelefonoDuenno = async function() {
  */
 window.getEmailNegocio = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.email || 'yislenifurones@gmail.com';
+    return config?.email || 'danielysmartinezcancio@gmail.com';
 };
 
 /**
@@ -164,7 +164,7 @@ window.getHorarioAtencion = async function() {
  */
 window.getMensajeBienvenida = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.mensaje_bienvenida || '¡Bienvenida a Diva Habana Nails!';
+    return config?.mensaje_bienvenida || '¡Bienvenida a Nails Salon Ebenezer !';
 };
 
 /**
@@ -180,7 +180,7 @@ window.getMensajeConfirmacion = async function() {
  */
 window.getNtfyTopic = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.ntfy_topic || 'divahabananails';
+    return config?.ntfy_topic || 'nailssalonebenezer';
 };
 
 /**
@@ -205,5 +205,5 @@ setTimeout(async () => {
     await window.cargarConfiguracionNegocio();
 }, 500);
 
-console.log('✅ config-negocio.js listo para Diva Habana Nails');
+console.log('✅ config-negocio.js listo para Nails Salon Ebenezer ');
 console.log('🏷️  ID configurado:', NEGOCIO_ID_POR_DEFECTO);

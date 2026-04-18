@@ -1,20 +1,20 @@
 {
-  "name": "Diva Habana Nails",
-  "short_name": "Diva",
+  "name": "Nails Salon Ebenezer ",
+  "short_name": "Nails",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/divahabananails/",
-  "scope": "/divahabananails/",
+  "start_url": "/nailssalonebenezer/",
+  "scope": "/nailssalonebenezer/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/divahabananails/icons/icon-192x192.png",
+      "src": "/nailssalonebenezer/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/divahabananails/icons/icon-512x512.png",
+      "src": "/nailssalonebenezer/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Diva Habana Nails
+// sw.js - Service Worker para Nails Salon Ebenezer 
 
-const CACHE_NAME = 'divahabananails-v1';
+const CACHE_NAME = 'nailssalonebenezer-v1';
 const urlsToCache = [
-  '/divahabananails/',
-  '/divahabananails/index.html',
-  '/divahabananails/admin.html',
-  '/divahabananails/admin-login.html',
-  '/divahabananails/setup-wizard.html',
-  '/divahabananails/editar-negocio.html',
-  '/divahabananails/manifest.json',
-  '/divahabananails/icons/icon-72x72.png',
-  '/divahabananails/icons/icon-96x96.png',
-  '/divahabananails/icons/icon-128x128.png',
-  '/divahabananails/icons/icon-144x144.png',
-  '/divahabananails/icons/icon-152x152.png',
-  '/divahabananails/icons/icon-192x192.png',
-  '/divahabananails/icons/icon-384x384.png',
-  '/divahabananails/icons/icon-512x512.png'
+  '/nailssalonebenezer/',
+  '/nailssalonebenezer/index.html',
+  '/nailssalonebenezer/admin.html',
+  '/nailssalonebenezer/admin-login.html',
+  '/nailssalonebenezer/setup-wizard.html',
+  '/nailssalonebenezer/editar-negocio.html',
+  '/nailssalonebenezer/manifest.json',
+  '/nailssalonebenezer/icons/icon-72x72.png',
+  '/nailssalonebenezer/icons/icon-96x96.png',
+  '/nailssalonebenezer/icons/icon-128x128.png',
+  '/nailssalonebenezer/icons/icon-144x144.png',
+  '/nailssalonebenezer/icons/icon-152x152.png',
+  '/nailssalonebenezer/icons/icon-192x192.png',
+  '/nailssalonebenezer/icons/icon-384x384.png',
+  '/nailssalonebenezer/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/divahabananails/icons/icon-192x192.png');
+            return caches.match('/nailssalonebenezer/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Diva Habana Nails');
+console.log('✅ Service Worker configurado para Nails Salon Ebenezer ');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);
