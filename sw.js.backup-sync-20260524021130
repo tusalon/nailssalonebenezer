@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Nails Salon Ebenezer 
 
-const CACHE_NAME = 'nailssalonebenezer-v29';
+const CACHE_NAME = 'nailssalonebenezer-v25';
 const urlsToCache = [
   '/nailssalonebenezer/',
   '/nailssalonebenezer/index.html',
